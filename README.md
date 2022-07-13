@@ -1,3 +1,3 @@
 # AizuHack
 
-test commit by okake
+test commit by okake06
