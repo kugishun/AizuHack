@@ -1,4 +1,6 @@
 const baseUrl = "https://us-central1-aizuhack-353413.cloudfunctions.net";
+const nextUrl =
+    "https://www.google.com/search?q=%E5%87%BA%E6%AC%A0%E5%85%A5%E5%8A%9B%E3%83%9A%E3%83%BC%E3%82%B8&oq=%E5%87%BA%E6%AC%A0%E5%85%A5%E5%8A%9B%E3%83%9A%E3%83%BC%E3%82%B8&aqs=chrome..69i57j0i546l5.10373j0j15&sourceid=chrome&ie=UTF-8";
 //const eventId = "testID"; /*location.search*/
 let eventIndex = 0;
 
@@ -11,6 +13,8 @@ const EventName = document.getElementById("eventName");
 const DateList = document.getElementById("dateList");
 const humanTable = document.getElementById("humanTable");
 const humans = document.getElementsByClassName("human");
+
+const inputButton = document.getElementById("addButton");
 
 function getData() {
     //const res = fetch(baseUrl + "/Data?collection=team03_events&id=" + eventId);
@@ -74,3 +78,7 @@ function stateC(STA) {
 }
 
 getData();
+
+inputButton.addEventListener("click", function () {
+    window.location.href = nextUrl;
+});
