@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title id="pageTitle">イベント作成ページ</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="eventCreate">
+        <div id="header"></div>
+        <div id="HowTo">二つの入力だけで簡単に予定表が作成できます！</div>
+
+        <div id="inputNameTile">
+            <div>最初に開催するイベント名を入力！</div>
+            <div id="inputNameBox">
+                <div>イベント名</div>
+                <input type="text" id="inputName"></input>
+            </div>
+        </div>
+
+        <div id="inputDateTile">
+            <div>次に集合日時を日程欄に入力！</div>
+            <div id="inputDateBox">
+                <div id="statement">
+                    <div>日程入力</div>
+                    <button id="addDateButton">日程追加</button>
+                    <button id="rmDateButton">日程を減らす</button>
+                </div>
+                <div id="DateList">
+                    <input type="text" class="inputDate"></input>
+                </div>
+            </div>
+        </div>
+
+        <button id="addButton">新規作成</button>
+        <div id="footer"></div>
+    </div>
+    <script src="createHome.js"></script>
+</body>
+
+</html>

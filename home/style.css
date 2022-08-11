@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background: #f4f0ff;
+}
+
+#eventCreate {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(270deg, #6534fe 0%, #9a7afd 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(270deg, #6534fe 0%, #9a7afd 100%);
+    /*position: absolute;
+    bottom: 0;*/
+}
+
+#HowTo {
+    width: 40%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 32px 40px auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#inputNameTile {
+    width: 80%;
+    height: 80px;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#inputNameBox {
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+}
+
+#inputName {
+    width: 120px;
+}
+
+#inputDateTile {
+    width: 80%;
+    height: auto;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px auto;
+    padding: 8px 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#inputDateBox {
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+}
+
+#statement {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#addDateButton {
+    width: 60px;
+    height: 30px;
+    border-width: 0;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #6534fe 0%, #9a7afd 100%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#rmDateButton {
+    width: 60px;
+    height: 30px;
+    border-width: 0;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #6534fe 0%, #9a7afd 100%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#DateList {
+    display: flex;
+    flex-flow: column;
+}
+
+#addButton {
+    width: 65%;
+    height: 80px;
+    border-width: 0;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #6534fe 0%, #9a7afd 100%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 25px auto 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
