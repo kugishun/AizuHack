@@ -1,7 +1,7 @@
 const baseUrl = "https://us-central1-aizuhack-353413.cloudfunctions.net";
 const nextUrl =
     "https://www.google.com/search?q=%E5%87%BA%E6%AC%A0%E5%85%A5%E5%8A%9B%E3%83%9A%E3%83%BC%E3%82%B8&oq=%E5%87%BA%E6%AC%A0%E5%85%A5%E5%8A%9B%E3%83%9A%E3%83%BC%E3%82%B8&aqs=chrome..69i57j0i546l5.10373j0j15&sourceid=chrome&ie=UTF-8";
-//const eventId = "testID"; /*location.search*/
+let eventId = "testID"; /*location.search*/
 let eventIndex = 0;
 
 let PostData;
@@ -32,6 +32,8 @@ function getData() {
         console.log("a");
         console.log(PostData);
         console.log(PostData[eventIndex].eventName);
+
+        eventIndex = EventSearch();
 
         PostDisplay();
     });
@@ -75,6 +77,15 @@ function stateC(STA) {
     if (STA === "OK") return "○";
     if (STA === "NG") return "×";
     if (STA === "WARN") return "△";
+}
+
+function EventSearch() {
+    for (let i = 0; i < PostData.length; i++) {
+        if (eventId === PostData[i].eventID) {
+            console.log(i);
+            return i;
+        }
+    }
 }
 
 getData();
